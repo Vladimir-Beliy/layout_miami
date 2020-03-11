@@ -1,0 +1,68 @@
+.header {
+  height: 700px;
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  &__top {
+    position: absolute;
+    top: 24px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  
+  &__phone {
+    margin-left: 120px;
+  }
+
+  &__action {
+    margin-right: 120px;
+  }
+  
+  &__link {
+    padding: 6px 0 5px;
+    border-bottom: 1px solid;
+    color: white;
+    text-transform: uppercase;
+    @include hover (color, $header-active-color, 0.2s);
+  }
+
+  &__nav {
+    position: absolute;
+    bottom: 43px;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: $small-screen-breackpoint) {
+  .header {
+
+    &__logo {
+      position: relative;
+      left: 3px;
+    }
+
+    &__top {
+      flex-direction: column;
+    }
+
+    &__action {
+      margin: 15px 0;
+    }
+
+    &__phone {
+      position: absolute;
+      margin: 0;
+      left: 0;
+      right: 0;
+      top: 116px;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.heading {
+  position: relative;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-transform: uppercase;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: calc(50% - 20px);
+    height: 2px;
+    top: calc(100% + 5px);
+    background-color: $main-color;
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+  }
+
+  &__crown {
+    display: block;
+    position: absolute;
+    margin: auto;
+    width: 20px;
+    height: 13px;
+    left: 0;
+    right: 0;
+    top: calc(100% + 4px);
+    background-image: url(../images/crown.svg);
+  }
+}

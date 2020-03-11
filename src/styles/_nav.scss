@@ -1,0 +1,33 @@
+.nav {
+  color: white;
+  text-transform: uppercase;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    margin: 5px 30px;
+    
+    &_active {
+      padding: 7px 20px;
+      background-color: $nav-active-color;
+      border-radius: 8px;
+    }
+  }
+  
+  &__link {
+    display: block;
+    padding: 7px 20px;
+    color: white;
+    @include hover (color, $header-active-color, 0.2s);
+  }
+}
+
+@media screen and (max-width: $small-screen-breackpoint) {
+  .nav__list {
+    flex-direction: column;
+    align-items: center;
+  }
+}

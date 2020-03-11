@@ -1,3 +1,67 @@
-h1 {
-  @extend %h1;
+html {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.header {
+  font-weight: 500;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.info {
+
+  &__heading {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 27px;
+
+    span:first-child {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+
+  @media screen and (min-width: 750px) {
+    &__heading {
+      font-size: 48px;
+      line-height: 60px;
+    }
+  }
+}
+
+.heading {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 36px;
+
+  @media screen and (min-width: 750px) {
+    & {
+      font-size: 48px;
+      line-height: 48px;
+    }
+  }
+}
+
+.gallery {
+
+  &__caption {
+    font-weight: 500;
+    font-size: 16px;
+  }
+}
+
+.btn {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
 }

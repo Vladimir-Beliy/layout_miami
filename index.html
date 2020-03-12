@@ -11,23 +11,27 @@
   <body>
     <header class="header">
       <div class="header__top">
-        <div class="header__phone">+1 234 555-55-55</div>
+        <div class="header__phone">
+          <a href="tel:123-456-7890" class="header__link">+1 234 555-55-55</a>
+        </div>
         <div class="logo header__logo"></div>
-        <div class="header__action"><a href="#" class="header__link">call to order</a></div>
+        <div class="header__action">
+          <a href="tel:123-456-7890" class="header__link">call to order</a>
+        </div>
       </div>
       <nav class="nav header__nav">
         <ul class="nav__list">
           <li class="nav__item nav__item_active">Home</li>
-          <li class="nav__item"><a href="#" class="nav__link">About Us</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Gallery</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Consultation</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Testimonials</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Contacts</a></li>
+          <li class="nav__item"><a href="#about-us" class="nav__link">About Us</a></li>
+          <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
+          <li class="nav__item"><a href="#consultation" class="nav__link">Consultation</a></li>
+          <li class="nav__item"><a href="#testimonials" class="nav__link">Testimonials</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contacts</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="section">
+      <section id="about-us" class="section">
         <div class="info section__wrap section__wrap_info">
           <h1 class="info__heading">Miami <strong>best</strong>  Real estate  <a href="#">here</a></h1>
           <div class="info__text">
@@ -38,7 +42,7 @@
           </div>
         </div>
       </section>
-      <section class="section">
+      <section id="gallery" class="section">
         <h2 class="heading section__heading">Gallery<span class="heading__crown"></span></h2>
         <div class="gallery section__wrap">
           <div class="photos photos_wide_left">
@@ -56,10 +60,123 @@
             <img src="./images/photos/6.jpg" alt="miami-photo" class="photos__img">
           </div>
           <p class="gallery__caption"><a href="#">Faena House</a> / Miami Beach, FL 33140</p>
-          <button class="btn gallery__btn">View all</button>
+          <button type="submit" class="btn gallery__btn">View all</button>
+        </div>
+      </section>
+      <section id="consultation" class="section">
+        <h2 class="heading section__heading">Consultation<span class="heading__crown"></span></h2>
+        <div class="consultation section__wrap">
+          <div class="consultation__text">
+            <h3 class="consultation__heading">How long have you do<br>yourself a gift?</h3>
+            <p>The procedural change mezzo forte starts izoritmichesky pickup at these moments stop LA Mazel and VA Tsukkerman in his "Analysis of musical works." Pointillism, which originated in the music of the early twentieth century, microforms, found a distant historical.</p>
+          </div>
+          <form action="#" method="GET" class="form consultation__form">
+            <label class="form__item">
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                maxlength="20"
+                required
+                class="input form__input">
+            </label>
+            <label class="form__item">
+              <input
+                type="tel"
+                pattern="^(1\s?)?(\(\d{3}\)|\d{3})[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$"
+                name="phone"
+                placeholder="Phone"
+                required
+                class="input form__input">
+            </label>
+            <label class="form__item">
+              <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              maxlength="30"
+              required
+              class="input form__input">
+            </label>
+            <button type="submit" class="btn form__btn">Consultation</button>
+          </form>
+        </div>
+      </section>
+      <section id="testimonials" class="section">
+        <h2 class="heading section__heading">Testimonials<span class="heading__crown"></span></h2>
+        <div class="testimonials section__wrap">
+          <div class="person testimonials__person">
+            <img src="./images/people/Leslie1.svg" alt="Leslie" class="person_photo">
+            <h3 class="person__name">Leslie Mckinney</h3>
+            <p class="person__position">CEO</p>
+            <p class="person__text">Nice work, Certificates National Association of Realtors (USA)</p>
+          </div>
+          <div class="person testimonials__person">
+            <img src="./images/people/Scarlett2.svg" alt="Scarlett" class="person_photo">
+            <h3 class="person__name">Scarlett Hawkins</h3>
+            <p class="person__position">Senior Vice President</p>
+            <p class="person__text">My soul is illuminated by an unearthly joy, as these beautiful spring morning, which I enjoy with all my heart</p>
+          </div>
+          <div class="person testimonials__person">
+            <img src="./images/people/Max3.svg" alt="Max" class="person_photo">
+            <h3 class="person__name">Max Henry</h3>
+            <p class="person__position">Chief Design Officer</p>
+            <p class="person__text">When my lovely valley of steam rises and half-day sun is above an impermeable</p>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="section">
+        <h2 class="heading section__heading">Contact us<span class="heading__crown"></span></h2>
+        <div class="contact section__wrap">
+          <div class="contact__text">
+            <div class="contact__wrap">
+              <p>Phone</p>
+              <p><a href="tel:123-456-7890" class="contact__link">+1 234 5555-55-55</a></p>
+            </div>
+            <div class="contact__wrap">
+              <p>Email</p>
+              <p><a href="mailto:hello@miami.com" class="contact__link">hello@miami.com</a></p>
+            </div>
+            <div class="contact__wrap">
+              <p>Address</p>
+              <p>400 first ave. n. suite 700 Minneapolis, MN 55401</p>
+            </div>
+          </div>
+          <form action="#" method="GET" class="form contact__form">
+            <label class="form__item">
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                maxlength="20"
+                required
+                class="input form__input">
+            </label>
+            <label class="form__item">
+              <input
+                type="tel"
+                pattern="^(1\s?)?(\(\d{3}\)|\d{3})[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$"
+                name="phone"
+                placeholder="Phone"
+                required
+                class="input form__input">
+            </label>
+            <label class="form__item">
+              <textarea
+                name="message"
+                placeholder="Message"
+                maxlength="200"
+                required
+                class="input input_textarea form__input"></textarea>
+            </label>
+            <button type="submit" class="btn form__btn">Write to us</button>
+          </form>
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="logo footer__logo"></div>
+    </footer>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

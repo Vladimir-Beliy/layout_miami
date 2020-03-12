@@ -11,7 +11,7 @@
     border-radius: 8px;
   }
 
-  @media screen and (min-width: 650px) {
+  @media screen and (min-width: $small-screen-breackpoint-photos) {
     &__img {
       height: 256px;
     }

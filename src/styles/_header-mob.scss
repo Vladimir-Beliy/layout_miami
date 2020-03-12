@@ -1,0 +1,76 @@
+.header-desck {
+  display: none;
+}
+
+.header-mob {
+  position: relative;
+  height: 568px;
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-position: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  &__top {
+    position: absolute;
+    top: 24px;
+    left: 0;
+    right: 0;
+    margin: 0 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+
+  &__text {
+    bottom: 80px;
+    left: 20px;
+  }
+
+  &__link {
+    display: block;
+    height: 18px;
+    width: 18px;
+    background-image: url(../images/phone.svg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  // &__logo {
+  //   z-index: 1;
+  // }
+
+  &__toggler:checked ~ &__nav {
+    visibility: visible;
+    top: 0;
+  }
+
+  &__toggler {
+    display: none;
+  }
+
+  &__toggler-label {
+    display: block;
+    height: 18px;
+    width: 18px;
+    background-image: url(../images/nav.svg);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  &__toggler-label_close {
+    position: absolute;
+    opacity: 1;
+    z-index: 1;
+    background-image: url(../images/close.svg);
+    top: 40px;
+    right: 23px;
+    transition: opacity 0.3s;
+  }
+
+  &__toggler:not(:checked) + &__toggler-label {
+    opacity: 0;
+  }
+}

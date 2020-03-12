@@ -9,24 +9,56 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header class="header">
-      <div class="header__top">
-        <div class="header__phone">
-          <a href="tel:123-456-7890" class="header__link">+1 234 555-55-55</a>
+    <header class="header-mob">
+      <div class="header-text header-mob__text">
+        Miami<br>Condo Kings
+      </div>
+      <div class="header-mob__top">
+        <div class="header-mob__phone">
+          <a href="tel:123-456-7890" class="header-mob__link"></a>
         </div>
-        <div class="logo header__logo"></div>
-        <div class="header__action">
-          <a href="tel:123-456-7890" class="header__link">call to order</a>
+        <div class="logo header-mob__logo"></div>
+        <label for="nav-toggler" class="header-mob__toggler-label"></label>
+      </div>
+      <input type="checkbox" id="nav-toggler" class="header-mob__toggler">
+      <label for="nav-toggler" class="header-mob__toggler-label header-mob__toggler-label_close"></label>
+      <nav class="nav-mob header-mob__nav">
+        <div class="logo nav-mob__logo"></div>
+        <div class="nav-mob__wrap">
+          <ul class="nav-mob__list">
+            <li class="nav-mob__item"><a href="/" class="nav-mob__link">Home</a></li>
+            <li class="nav-mob__item"><a href="#about-us" class="nav-mob__link">About Us</a></li>
+            <li class="nav-mob__item"><a href="#gallery" class="nav-mob__link">Gallery</a></li>
+            <li class="nav-mob__item"><a href="#consultation" class="nav-mob__link">Consultation</a></li>
+            <li class="nav-mob__item"><a href="#testimonials" class="nav-mob__link">Testimonials</a></li>
+            <li class="nav-mob__item"><a href="#contact" class="nav-mob__link">Contacts</a></li>
+          </ul>
+            <a href="tel:123-456-7890" class="nav-mob__link nav-mob__link_action">+1 234 555-55-55</a>
+            <a href="tel:123-456-7890" class="nav-mob__link nav-mob__link_action">call to order</a>
+        </div>
+      </nav>
+    </header>
+    <header class="header-desck">
+      <div class="header-text header-desck__text">
+        Miami<br>Condo Kings
+      </div>
+      <div class="header-desck__top">
+        <div class="header-desck__phone">
+          <a href="tel:123-456-7890" class="header-desck__link">+1 234 555-55-55</a>
+        </div>
+        <div class="logo header-desck__logo"></div>
+        <div class="header-desck__action">
+          <a href="tel:123-456-7890" class="header-desck__link">call to order</a>
         </div>
       </div>
-      <nav class="nav header__nav">
-        <ul class="nav__list">
-          <li class="nav__item nav__item_active">Home</li>
-          <li class="nav__item"><a href="#about-us" class="nav__link">About Us</a></li>
-          <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
-          <li class="nav__item"><a href="#consultation" class="nav__link">Consultation</a></li>
-          <li class="nav__item"><a href="#testimonials" class="nav__link">Testimonials</a></li>
-          <li class="nav__item"><a href="#contact" class="nav__link">Contacts</a></li>
+      <nav class="nav-desck header-desck__nav">
+        <ul class="nav-desck__list">
+          <li class="nav-desck__item nav-desck__item_active">Home</li>
+          <li class="nav-desck__item"><a href="#about-us" class="nav-desck__link">About Us</a></li>
+          <li class="nav-desck__item"><a href="#gallery" class="nav-desck__link">Gallery</a></li>
+          <li class="nav-desck__item"><a href="#consultation" class="nav-desck__link">Consultation</a></li>
+          <li class="nav-desck__item"><a href="#testimonials" class="nav-desck__link">Testimonials</a></li>
+          <li class="nav-desck__item"><a href="#contact" class="nav-desck__link">Contacts</a></li>
         </ul>
       </nav>
     </header>

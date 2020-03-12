@@ -1,0 +1,50 @@
+.header-mob {
+  display: none;
+}
+
+.header-desck {
+  position: relative;
+  height: 700px;
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-position: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  &__top {
+    position: absolute;
+    top: 24px;
+    left: 0;
+    right: 0;
+    margin: 0 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+
+  &__text {
+    bottom: 165px;
+    left: 120px;
+  }
+
+  &__link {
+    color: white;
+    @include hover (color, $header-active-color);
+  }
+
+  &__action &__link {
+    padding: 6px 0 5px;
+    border-bottom: 1px solid;
+  }
+
+  &__nav {
+    display: block;
+    position: absolute;
+    margin-left: 120px;
+    margin-right: 120px;
+    bottom: 48px;
+    left: 0;
+    right: 0;
+  }
+}

@@ -1,0 +1,16 @@
+.header-text {
+  position: absolute;
+  text-transform: none;
+  color: white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 2px;
+    top: -16px;
+    background: white;
+    border-radius: 2px;
+  }
+}

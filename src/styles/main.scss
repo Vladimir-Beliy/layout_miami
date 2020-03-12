@@ -3,9 +3,19 @@
 @import "typography";
 
 @import "reset";
-@import "header";
+
+@media screen and (max-width: $small-screen-breackpoint-header - 1) {
+  @import "header-mob";
+  @import "nav-mob";
+}
+
+@media screen and (min-width: $small-screen-breackpoint-header) {
+  @import "header-desck";
+  @import "nav-desck";
+}
+
 @import "logo";
-@import "nav";
+@import "header-text";
 @import "section";
 @import "info";
 @import "heading";

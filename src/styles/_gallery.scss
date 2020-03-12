@@ -10,7 +10,7 @@
     width: 100%;
   }
 
-  @media screen and (min-width: 430px) {
+  @media screen and (min-width: $small-screen-breackpoint-gallery) {
     &__btn {
       width: 188px;
     }

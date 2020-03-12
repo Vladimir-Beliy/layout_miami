@@ -1,0 +1,45 @@
+.nav-mob {
+  position: absolute;
+  visibility: hidden;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: $main-color;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition-duration: 0.4s;
+
+  &__logo {
+    position: absolute;
+    top: 24px;
+    left: calc(50% - #{$logo-width-mod / 2});
+  }
+
+  &__wrap {
+    position: absolute;
+    bottom: 52px;
+  }
+
+  &__item {
+    margin: 9px 0;
+  }
+
+  .nav-mob__link {
+    display: block;
+    margin-left: 21px;
+    width: fit-content;
+    padding: 7px 0;
+    color: white;
+    @include hover (color, $header-active-color);
+  }
+
+  &__link_action:first-of-type {
+    margin-top: 32px;
+  }
+
+  &__link_action:last-of-type {
+    padding: 7px 0 6px;
+    margin-top: 16px;
+    border-bottom: 1px solid;
+  }
+}

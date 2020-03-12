@@ -2,16 +2,24 @@
   position: sticky;
   bottom: 0;
   z-index: -1;
-  height: 359px;
+  height: 206px;
   background-image: url(../images/footer.svg);
   background-size: cover;
   background-position: center;
 
   &__logo {
     position: absolute;
-    bottom: 40px;
+    bottom: 24px;
     left: 0;
     right: 0;
     margin: auto;
+  }
+
+  @media screen and (min-width: $small-screen-breackpoint-main) {
+    height: 359px;
+
+    &__logo {
+      bottom: 40px;
+    }
   }
 }

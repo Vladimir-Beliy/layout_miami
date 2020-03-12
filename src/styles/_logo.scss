@@ -1,8 +1,13 @@
 .logo {
-  width: $logo-width;
-  height: $logo-height;
+  width: $logo-width-mod;
+  height: $logo-height-mod;
   background-image: url(../images/logo.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media screen and (min-width: $small-screen-breackpoint-header) {
+    width: $logo-width-desck;
+    height: $logo-height-desck;
+  }
 }

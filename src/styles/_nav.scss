@@ -4,11 +4,11 @@
 
   &__list {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   &__item {
-    margin: 5px 30px;
+    margin: 5px 0;
     
     &_active {
       padding: 7px 20px;
@@ -21,7 +21,7 @@
     display: block;
     padding: 7px 20px;
     color: white;
-    @include hover (color, $header-active-color, 0.2s);
+    @include hover (color, $header-active-color);
   }
 }
 

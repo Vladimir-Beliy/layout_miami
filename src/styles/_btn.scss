@@ -4,10 +4,15 @@
   height: 56px;
   border: 2px solid $main-color;
   border-radius: 8px;
-  background: $main-color;
-  box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46);
-  color: white;
+  background: white;
+  box-shadow: 0 13px 27px transparent;
+  color: $main-color;
   cursor: pointer;
-  @include hover (color, $main-color, 0.1s);
-  @include hover (background, white, 0.2s);
+  @include hover (color, white);
+  @include hover (background, $main-color);
+
+  &:hover {
+    transition: box-shadow 0.5s;
+    box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46);
+  }
 }

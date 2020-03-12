@@ -29,11 +29,13 @@
     border-bottom: 1px solid;
     color: white;
     text-transform: uppercase;
-    @include hover (color, $header-active-color, 0.2s);
+    @include hover (color, $header-active-color);
   }
 
   &__nav {
     position: absolute;
+    margin-left: 120px;
+    margin-right: 120px;
     bottom: 43px;
     left: 0;
     right: 0;

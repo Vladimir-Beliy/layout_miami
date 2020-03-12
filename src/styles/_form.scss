@@ -1,0 +1,12 @@
+.form {
+
+  &__item {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &__input,
+  &__btn {
+    width: 100%;
+  }
+}

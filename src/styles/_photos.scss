@@ -15,22 +15,22 @@
     &__img {
       height: 256px;
     }
-  
+
     &_wide_left {
       .photos__img:first-child {
         width: calc(67% - #{$gap / 2});
       }
-  
+
       .photos__img:last-child {
         width: calc(33% - #{$gap / 2});
       }
     }
-  
+
     &_wide_right {
       .photos__img:first-child {
         width: calc(33% - #{$gap / 2});
       }
-  
+
       .photos__img:last-child {
         width: calc(67% - #{$gap / 2});
       }

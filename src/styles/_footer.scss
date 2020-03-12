@@ -1,0 +1,17 @@
+.footer {
+  position: sticky;
+  bottom: 0;
+  z-index: -1;
+  height: 359px;
+  background-image: url(../images/footer.svg);
+  background-size: cover;
+  background-position: center;
+
+  &__logo {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}

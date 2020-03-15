@@ -33,11 +33,6 @@
     @include hover (color, $header-active-color);
   }
 
-  &__action &__link {
-    padding: 6px 0 5px;
-    border-bottom: 1px solid;
-  }
-
   &__nav {
     display: block;
     position: absolute;

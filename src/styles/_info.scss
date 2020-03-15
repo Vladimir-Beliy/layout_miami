@@ -11,16 +11,16 @@
 
   &__text {
     max-width: 500px;
+  }
 
-    p:not(:last-child) {
-      margin-bottom: 30px;
-    }
+  &__paragraph:not(:last-child) {
+    margin-bottom: 30px;
+  }
 
-    span:first-child {
-      display: block;
-      margin-bottom: 25px;
-      color: $main-color;
-    }
+  &__span {
+    display: block;
+    margin-bottom: 25px;
+    color: $main-color;
   }
 }
 

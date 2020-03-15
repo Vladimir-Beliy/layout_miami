@@ -10,9 +10,14 @@
   cursor: pointer;
   @include hover (color, white);
   @include hover (background, $main-color);
+  outline: none;
 
   &:hover {
     transition: box-shadow 0.5s;
     box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46);
+  }
+
+  &:focus {
+    box-shadow: 0 0 15px rgba(0, 83, 181, 0.46);
   }
 }

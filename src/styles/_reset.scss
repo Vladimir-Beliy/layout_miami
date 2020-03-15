@@ -12,6 +12,10 @@ p {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ul {
   list-style: none;
 }
@@ -19,4 +23,8 @@ ul {
 a {
   color: #0075ff;
   text-decoration: none;
+
+  &:focus {
+    outline: 1.5px solid $main-color;
+  }
 }

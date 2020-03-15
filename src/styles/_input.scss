@@ -5,12 +5,18 @@
   background: #f7f8ff;
   border: 1px solid #f7f8ff;
   border-radius: 8px;
+  outline: none;
 
   &::placeholder {
     color: #b9c1ce;
   }
 
   &_textarea {
+    resize: none;
     height: 144px;
+  }
+
+  &:focus {
+    box-shadow: 0 0 15px rgba(0, 83, 181, 0.46);
   }
 }

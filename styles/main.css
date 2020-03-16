@@ -156,6 +156,9 @@ a {
     .header-mob__text {
       bottom: 80px;
       left: 20px; }
+    .header-mob__logo {
+      top: 24px;
+      left: calc(50% - 38.5px); }
     .header-mob__phone {
       position: absolute;
       display: block;
@@ -166,10 +169,6 @@ a {
       background-image: url(../images/phone.svg);
       background-size: cover;
       background-position: center; }
-    .header-mob__logo {
-      position: absolute;
-      top: 24px;
-      left: calc(50% - 38.5px); }
     .header-mob__toggle {
       display: none; }
     .header-mob__btn {
@@ -234,7 +233,6 @@ a {
             transition-duration: 0.4s;
     z-index: 3; }
     .nav-mob__logo {
-      position: absolute;
       top: 24px;
       left: calc(50% - 38.5px); }
     .nav-mob__wrap {
@@ -272,25 +270,25 @@ a {
     background-position: center;
     letter-spacing: 2px;
     text-transform: uppercase; }
+    .header-desck__text {
+      bottom: 165px;
+      left: 120px; }
+    .header-desck__logo {
+      top: 24px;
+      left: calc(50% - 38.5px); }
     .header-desck__top {
       position: absolute;
-      top: 24px;
-      left: 0;
-      right: 0;
-      margin: 0 120px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      margin: 0 120px;
+      top: 56px;
+      left: 0;
+      right: 0;
       color: white; }
-    .header-desck__text {
-      bottom: 165px;
-      left: 120px; }
     .header-desck__link {
       color: white;
       -webkit-transition: color 0.3s;
@@ -327,6 +325,7 @@ a {
         color: #9fadc2; } }
 
 .logo {
+  position: absolute;
   width: 77px;
   height: 50px;
   background-image: url(../images/logo.png);
@@ -536,40 +535,21 @@ a {
             box-shadow: 0 0 15px rgba(0, 83, 181, 0.46); }
 
 .consultation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .consultation__text {
-    max-width: 500px;
-    margin-bottom: 32px; }
+  display: grid;
+  grid-template-columns: minmax(auto, 500px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 32px 25px; }
   .consultation__heading {
     color: #0075ff;
     margin-bottom: 16px; }
-  .consultation__form {
-    width: 250px; }
-
-@media screen and (min-width: 750px) {
-  .consultation {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    .consultation__text {
-      width: 413px;
-      margin-right: 25px;
-      margin-bottom: 0; }
-    .consultation__form {
-      width: 413px; } }
+  @media screen and (min-width: 750px) {
+    .consultation {
+      grid-template-columns: repeat(2, minmax(auto, 420px));
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
 
 .form__item {
   display: block;
@@ -586,7 +566,11 @@ a {
   background: #f7f8ff;
   border: 1px solid #f7f8ff;
   border-radius: 8px;
-  outline: none; }
+  outline: none;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s; }
   .input::-webkit-input-placeholder {
     color: #b9c1ce; }
   .input::-moz-placeholder {
@@ -600,7 +584,7 @@ a {
   .input_textarea {
     resize: none;
     height: 144px; }
-  .input:focus {
+  .input:hover, .input:focus {
     -webkit-box-shadow: 0 0 15px rgba(0, 83, 181, 0.46);
             box-shadow: 0 0 15px rgba(0, 83, 181, 0.46); }
 
@@ -646,44 +630,29 @@ a {
     color: #9fadc2; }
 
 .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  display: grid;
+  grid-template-columns: minmax(auto, 500px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  row-gap: 32px; }
   .contact__text {
     display: grid;
     gap: 24px 108px;
-    grid-template-columns: 174px;
-    margin-right: 65px;
-    margin-bottom: 32px; }
-    .contact__text p:first-child {
-      margin-bottom: 8px;
-      color: #9fadc2; }
-  .contact__form {
-    width: 250px; }
+    grid-template-columns: 174px; }
+  .contact__paragraph:first-child {
+    margin-bottom: 8px;
+    color: #9fadc2; }
 
 @media screen and (min-width: 750px) {
   .contact {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    grid-template-columns: repeat(2, minmax(auto, 420px));
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
+            justify-content: space-between; }
     .contact__text {
       grid-template-columns: 152px 100px;
-      grid-template-rows: 60px 60px;
-      margin-bottom: 0; }
+      grid-template-rows: 60px 60px; }
     .contact__wrap:nth-child(1) {
       grid-column: 1/2;
       grid-row: 1/2; }
@@ -692,9 +661,7 @@ a {
       grid-row: 2/3; }
     .contact__wrap:nth-child(3) {
       grid-column: 2/3;
-      grid-row: 1/3; }
-    .contact__form {
-      width: 413px; } }
+      grid-row: 1/3; } }
 
 .footer {
   position: -webkit-sticky;
@@ -706,11 +673,8 @@ a {
   background-size: cover;
   background-position: center; }
   .footer__logo {
-    position: absolute;
     bottom: 24px;
-    left: 0;
-    right: 0;
-    margin: auto; }
+    left: calc(50% - 38.5px); }
   @media screen and (min-width: 750px) {
     .footer {
       height: 359px; }

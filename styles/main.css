@@ -1,26 +1,20 @@
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Ubuntu";
-  src: url(../fonts/Ubuntu/Ubuntu-Light.ttf);
+  src: url(../fonts/Roboto-Light.ttf);
   font-weight: 300; }
 
 @font-face {
-  font-family: "Ubuntu";
-  src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf);
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
   font-weight: 400; }
 
 @font-face {
-  font-family: "Ubuntu";
-  src: url(../fonts/Ubuntu/Ubuntu-Medium.ttf);
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Medium.ttf);
   font-weight: 500; }
 
 html {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px; }

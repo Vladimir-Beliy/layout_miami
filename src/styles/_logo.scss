@@ -1,4 +1,5 @@
 .logo {
+  position: absolute;
   width: $logo-width-mod;
   height: $logo-height-mod;
   background-image: url(../images/logo.png);
@@ -6,7 +7,7 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  @media screen and (min-width: $small-screen-breackpoint-header) {
+  @media screen and (min-width: $breackpoint-header) {
     width: $logo-width-desck;
     height: $logo-height-desck;
   }

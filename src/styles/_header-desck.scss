@@ -11,21 +11,25 @@
   letter-spacing: 2px;
   text-transform: uppercase;
 
-  &__top {
-    position: absolute;
-    top: 24px;
-    left: 0;
-    right: 0;
-    margin: 0 120px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-  }
-
   &__text {
     bottom: 165px;
     left: 120px;
+  }
+
+  &__logo {
+    top: 24px;
+    left: calc(50% - #{$logo-width-mod / 2});
+  }
+
+  &__top {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 120px;
+    top: 56px;
+    left: 0;
+    right: 0;
+    color: white;
   }
 
   &__link {

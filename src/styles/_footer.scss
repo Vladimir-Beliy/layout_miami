@@ -8,14 +8,11 @@
   background-position: center;
 
   &__logo {
-    position: absolute;
     bottom: 24px;
-    left: 0;
-    right: 0;
-    margin: auto;
+    left: calc(50% - #{$logo-width-mod / 2});
   }
 
-  @media screen and (min-width: $small-screen-breackpoint-main) {
+  @media screen and (min-width: $breackpoint-main) {
     height: 359px;
 
     &__logo {

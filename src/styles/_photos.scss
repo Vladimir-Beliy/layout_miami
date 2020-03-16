@@ -25,7 +25,7 @@
     @include hover(transform, scale(1.2));
   }
 
-  @media screen and (min-width: $small-screen-breackpoint-photos) {
+  @media screen and (min-width: $breackpoint-photos) {
     &__link {
       height: 256px;
     }

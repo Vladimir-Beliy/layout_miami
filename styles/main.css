@@ -140,19 +140,19 @@ a {
     display: none; }
   .header-mob {
     position: relative;
-    height: 568px;
     background-image: url("../images/header.jpg");
     background-size: cover;
     background-position: center;
     letter-spacing: 2px;
     text-transform: uppercase;
+    height: 568px;
     z-index: 2; }
-    .header-mob__text {
-      bottom: 80px;
-      left: 20px; }
     .header-mob__logo {
       top: 24px;
       left: calc(50% - 38.5px); }
+    .header-mob__text {
+      bottom: 80px;
+      left: 20px; }
     .header-mob__phone {
       position: absolute;
       display: block;
@@ -257,19 +257,23 @@ a {
   .header-mob {
     display: none; }
   .header-desck {
-    position: relative;
-    height: 700px;
     background-image: url("../images/header.jpg");
     background-size: cover;
     background-position: center;
     letter-spacing: 2px;
-    text-transform: uppercase; }
-    .header-desck__text {
-      bottom: 165px;
-      left: 120px; }
+    text-transform: uppercase;
+    height: 700px; }
     .header-desck__logo {
       top: 24px;
       left: calc(50% - 38.5px); }
+    .header-desck__wrap {
+      position: relative;
+      max-width: 1060px;
+      height: 100%;
+      margin: auto; }
+    .header-desck__text {
+      bottom: 165px;
+      left: 120px; }
     .header-desck__top {
       position: absolute;
       display: -webkit-box;
@@ -278,7 +282,7 @@ a {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      margin: 0 120px;
+      margin: 0 20px;
       top: 56px;
       left: 0;
       right: 0;
@@ -292,8 +296,8 @@ a {
     .header-desck__nav {
       display: block;
       position: absolute;
-      margin-left: 120px;
-      margin-right: 120px;
+      margin-left: 20px;
+      margin-right: 20px;
       bottom: 48px;
       left: 0;
       right: 0; }

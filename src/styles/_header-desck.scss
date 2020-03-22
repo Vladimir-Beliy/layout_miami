@@ -3,29 +3,26 @@
 }
 
 .header-desck {
-  position: relative;
+  @include header-bg;
   height: 700px;
-  background-image: url("../images/header.jpg");
-  background-size: cover;
-  background-position: center;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+
+  &__wrap {
+    position: relative;
+    max-width: 1060px;
+    height: 100%;
+    margin: auto;
+  }
 
   &__text {
     bottom: 165px;
     left: 120px;
   }
 
-  &__logo {
-    top: 24px;
-    left: calc(50% - #{$logo-width-mod / 2});
-  }
-
   &__top {
     position: absolute;
     display: flex;
     justify-content: space-between;
-    margin: 0 120px;
+    margin: 0 20px;
     top: 56px;
     left: 0;
     right: 0;
@@ -40,8 +37,8 @@
   &__nav {
     display: block;
     position: absolute;
-    margin-left: 120px;
-    margin-right: 120px;
+    margin-left: 20px;
+    margin-right: 20px;
     bottom: 48px;
     left: 0;
     right: 0;

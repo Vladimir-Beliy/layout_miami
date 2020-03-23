@@ -1,0 +1,19 @@
+.person {
+  width: 240px;
+  text-align: center;
+
+  &__img {
+    width: 153px;
+    border-radius: 50%;
+  }
+
+  &__name {
+    margin-top: 28px;
+    color: $main-color;
+  }
+
+  &__position {
+    margin: 5px 0;
+    color: #9fadc2;
+  }
+}

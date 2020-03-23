@@ -1,0 +1,16 @@
+.consultation {
+  display: grid;
+  grid-template-columns: minmax(auto, 500px);
+  justify-content: center;
+  gap: 32px 25px;
+
+  &__heading {
+    color: $main-color;
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: $breackpoint-main) {
+    grid-template-columns: repeat(2, minmax(auto, 420px));
+    justify-content: space-between;
+  }
+}

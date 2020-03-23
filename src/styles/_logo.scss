@@ -1,0 +1,14 @@
+.logo {
+  position: absolute;
+  width: $logo-width-mob;
+  height: $logo-height-mob;
+  background-image: url(../images/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and (min-width: $breackpoint-header) {
+    width: $logo-width-desck;
+    height: $logo-height-desck;
+  }
+}

@@ -2,6 +2,30 @@
 @import "fonts";
 @import "typography";
 
-body {
-  background: $c-gray;
+@import "reset";
+
+@media screen and (max-width: $breackpoint-header - 1) {
+  @import "header-mob";
+  @import "nav-mob";
 }
+
+@media screen and (min-width: $breackpoint-header) {
+  @import "header-desck";
+  @import "nav-desck";
+}
+
+@import "logo";
+@import "header-text";
+@import "section";
+@import "info";
+@import "heading";
+@import "gallery";
+@import "photos";
+@import "btn";
+@import "consultation";
+@import "form";
+@import "input";
+@import "testimonials";
+@import "person";
+@import "contact";
+@import "footer";

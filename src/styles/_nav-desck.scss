@@ -1,0 +1,20 @@
+.nav-desck {
+  color: white;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item_active {
+    background-color: $nav-active-color;
+    border-radius: 8px;
+  }
+
+  &__link {
+    display: block;
+    padding: 7px 20px;
+    color: white;
+    @include hover (color, $header-active-color);
+  }
+}

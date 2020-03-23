@@ -1,3 +1,142 @@
-h1 {
-  @extend %h1;
+html {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.header-mob,
+.header-desck {
+  font-weight: 500;
+}
+
+.header-text {
+  font-size: 40px;
+  line-height: 40px;
+
+  @media screen and (min-width: $breackpoint-header) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.nav-mob {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 22px;
+
+  &__link_action {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+strong {
+  font-weight: 500;
+}
+
+.info {
+
+  &__heading {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 27px;
+
+    span:first-child {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+
+  @media screen and (min-width: $breackpoint-main) {
+    &__heading {
+      font-size: 48px;
+      line-height: 60px;
+    }
+  }
+}
+
+.heading {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 36px;
+
+  @media screen and (min-width: $breackpoint-main) {
+    & {
+      font-size: 48px;
+      line-height: 48px;
+    }
+  }
+}
+
+.gallery {
+
+  &__caption {
+    font-weight: 500;
+    font-size: 16px;
+  }
+}
+
+.btn {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.consultation {
+
+  &__text {
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+  &__heading {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.input {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.person {
+
+  &__name {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  &__position {
+    font-size: 14px;
+    line-height: 27px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 27px;
+  }
+}
+
+.contact {
+
+  &__text {
+    line-height: 27px;
+
+    p:first-child {
+      font-size: 14px;
+    }
+
+    p:last-child {
+      font-size: 16px;
+    }
+  }
 }

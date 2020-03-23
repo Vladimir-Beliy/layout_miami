@@ -1,0 +1,40 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__heading {
+    margin-bottom: 48px;
+    max-width: 500px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    max-width: 500px;
+  }
+
+  &__paragraph:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  &__span {
+    display: block;
+    margin-bottom: 25px;
+    color: $main-color;
+  }
+}
+
+@media screen and (min-width: $breackpoint-main) {
+  .info {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__heading {
+      margin-right: 25px;
+      width: 314px;
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+  }
+}

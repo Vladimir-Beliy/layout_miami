@@ -4,3 +4,16 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin header-bg {
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-position: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  &__logo {
+    top: 24px;
+    left: calc(50% - #{$logo-width-mob / 2});
+  }
+}

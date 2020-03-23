@@ -1,0 +1,46 @@
+.header-mob {
+  display: none;
+}
+
+.header-desck {
+  @include header-bg;
+  height: 700px;
+
+  &__wrap {
+    position: relative;
+    max-width: 1060px;
+    height: 100%;
+    margin: auto;
+  }
+
+  &__text {
+    bottom: 165px;
+    left: 120px;
+  }
+
+  &__top {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    top: 56px;
+    left: 0;
+    right: 0;
+    color: white;
+  }
+
+  &__link {
+    color: white;
+    @include hover (color, $header-active-color);
+  }
+
+  &__nav {
+    display: block;
+    position: absolute;
+    margin-left: 20px;
+    margin-right: 20px;
+    bottom: 48px;
+    left: 0;
+    right: 0;
+  }
+}

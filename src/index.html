@@ -5,9 +5,243 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miami</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
   </head>
   <body>
-    <h1>Miami</h1>
+    <header id="home" class="header-mob">
+      <div class="header-text header-mob__text">
+        Miami<br>Condo Kings
+      </div>
+      <a href="tel:+1 234 555-55-55" class="header-mob__phone"></a>
+      <div class="logo header-mob__logo"></div>
+      <input type="checkbox" id="nav-toggle" class="header-mob__toggle">
+      <label for="nav-toggle" class="header-mob__btn">
+        <span class="header-mob__span"></span>
+      </label>
+      <div class="nav-mob header-mob__nav">
+        <div class="logo nav-mob__logo"></div>
+        <div class="nav-mob__wrap">
+          <nav class="nav-mob__menu">
+            <ul class="nav-mob__list">
+              <li class="nav-mob__item">
+                <a href="#home" class="nav-mob__link">Home</a>
+              </li>
+              <li class="nav-mob__item">
+                <a href="#about-us" class="nav-mob__link">About Us</a>
+              </li>
+              <li class="nav-mob__item">
+                <a href="#gallery" class="nav-mob__link">Gallery</a>
+              </li>
+              <li class="nav-mob__item">
+                <a href="#consultation" class="nav-mob__link">Consultation</a>
+              </li>
+              <li class="nav-mob__item">
+                <a href="#testimonials" class="nav-mob__link">Testimonials</a>
+              </li>
+              <li class="nav-mob__item">
+                <a href="#contact" class="nav-mob__link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="tel:+1 234 555-55-55" class="nav-mob__link nav-mob__link_action">+1 234 555-55-55</a>
+          <a href="tel:+1 234 555-55-55" class="nav-mob__link nav-mob__link_action">call to order</a>
+        </div>
+      </div>
+    </header>
+    <div class="header-mob__circle"></div>
+    <header class="header-desck">
+      <div class="header-desck__wrap">
+        <div class="header-text header-desck__text">
+          Miami<br>Condo Kings
+        </div>
+        <div class="logo header-desck__logo"></div>
+        <div class="header-desck__top">
+          <a href="tel:+1 234 555-55-55" class="header-desck__link">+1 234 555-55-55</a>
+          <a href="tel:+1 234 555-55-55" class="header-desck__link">call to order</a>
+        </div>
+        <nav class="nav-desck header-desck__nav">
+          <ul class="nav-desck__list">
+            <li class="nav-desck__item nav-desck__item_active">
+              <a href="#" class="nav-desck__link">Home</a>
+            </li>
+            <li class="nav-desck__item">
+              <a href="#about-us" class="nav-desck__link">About Us</a>
+            </li>
+            <li class="nav-desck__item">
+              <a href="#gallery" class="nav-desck__link">Gallery</a>
+            </li>
+            <li class="nav-desck__item">
+              <a href="#consultation" class="nav-desck__link">Consultation</a>
+            </li>
+            <li class="nav-desck__item">
+              <a href="#testimonials" class="nav-desck__link">Testimonials</a>
+            </li>
+            <li class="nav-desck__item">
+              <a href="#contact" class="nav-desck__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="about-us" class="section">
+        <div class="info section__wrap section__wrap_info">
+          <h1 class="info__heading">Miami <strong>best</strong> Real estate <a href="#">here</a></h1>
+          <div class="info__text">
+            <p class="info__paragraph"><span class="info__span"><strong>Over 50 years experience in love.</strong></span>
+            Mazel and VA Tsukkerman in his "Analysis of musical works." Pointillism, which originated in the music of the early twentieth century, microforms, found a distant historical.</p>
+            <p class="info__paragraph">The market leader in real estate since 2003. Awards Real Estate Company, 2010, 2011, 2013. More than 200 satisfied customers premium segment. We focus only on new buildings and high-level doskanalno know this area better than other specialists. Working directly with developers - so have more useful information about the profitable deals.</p>
+            <p class="info__paragraph"><strong> We will never be late!<br>Guaranteed secure transaction - 100%</strong></p>
+          </div>
+        </div>
+      </section>
+      <section id="gallery" class="section">
+        <h2 class="heading section__heading">Gallery<span class="heading__crown"></span></h2>
+        <div class="gallery section__wrap">
+          <div class="photos photos_wide_left">
+            <a href="#" class="photos__link">
+              <img src="./images/photos/1.jpg" alt="miami-photo" class="photos__img">
+            </a>
+            <a href="#" class="photos__link">
+              <img src="./images/photos/2.jpg" alt="miami-photo" class="photos__img">
+            </a>
+          </div>
+          <p class="gallery__caption"><a href="#">Marina Palms</a> / North Miami Beach, FL 33162</p>
+          <div class="photos">
+            <a href="#" class="photos__link">
+              <img src="./images/photos/3.jpg" alt="miami-photo" class="photos__img">
+            </a>
+            <a href="#" class="photos__link">
+              <img src="./images/photos/4.jpg" alt="miami-photo" class="photos__img">
+            </a>
+          </div>
+          <p class="gallery__caption"><a href="#">Edition Residens</a> / Miami Beach, FL 33139 </p>
+          <div class="photos photos_wide_right">
+            <a href="#" class="photos__link">
+              <img src="./images/photos/5.jpg" alt="miami-photo" class="photos__img">
+            </a>
+            <a href="#" class="photos__link">
+              <img src="./images/photos/6.jpg" alt="miami-photo" class="photos__img">
+            </a>
+          </div>
+          <p class="gallery__caption"><a href="#">Faena House</a> / Miami Beach, FL 33140</p>
+          <button type="submit" class="btn gallery__btn">View all</button>
+        </div>
+      </section>
+      <section id="consultation" class="section">
+        <h2 class="heading section__heading">Consultation<span class="heading__crown"></span></h2>
+        <div class="consultation section__wrap">
+          <div class="consultation__text">
+            <h3 class="consultation__heading">How long have you do<br>yourself a gift?</h3>
+            <p>The procedural change mezzo forte starts izoritmichesky pickup at these moments stop LA Mazel and VA Tsukkerman in his "Analysis of musical works." Pointillism, which originated in the music of the early twentieth century, microforms, found a distant historical.</p>
+          </div>
+          <form action="#" method="GET" class="form consultation__form">
+            <label class="form__item">
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                maxlength="30"
+                required
+                class="input form__input">
+            </label>
+            <label class="form__item">
+              <input
+                type="tel"
+                pattern="^(1\s?)?(\(\d{3}\)|\d{3})[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$"
+                name="phone"
+                placeholder="Phone (in format: 123-456-7890)"
+                required
+                class="input form__input">
+            </label>
+            <label class="form__item">
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                maxlength="30"
+                required
+                class="input form__input">
+            </label>
+            <button type="submit" class="btn form__btn">Consultation</button>
+          </form>
+        </div>
+      </section>
+      <section id="testimonials" class="section">
+        <h2 class="heading section__heading">Testimonials<span class="heading__crown"></span></h2>
+        <div class="testimonials section__wrap">
+          <div class="person testimonials__person">
+            <img src="./images/people/Leslie1.svg" alt="Leslie" class="person_photo">
+            <h3 class="person__name">Leslie Mckinney</h3>
+            <p class="person__position">CEO</p>
+            <p class="person__text">Nice work, Certificates National Association of Realtors (USA)</p>
+          </div>
+          <div class="person testimonials__person">
+            <img src="./images/people/Scarlett2.svg" alt="Scarlett" class="person_photo">
+            <h3 class="person__name">Scarlett Hawkins</h3>
+            <p class="person__position">Senior Vice President</p>
+            <p class="person__text">My soul is illuminated by an unearthly joy, as these beautiful spring morning, which I enjoy with all my heart</p>
+          </div>
+          <div class="person testimonials__person">
+            <img src="./images/people/Max3.svg" alt="Max" class="person_photo">
+            <h3 class="person__name">Max Henry</h3>
+            <p class="person__position">Chief Design Officer</p>
+            <p class="person__text">When my lovely valley of steam rises and half-day sun is above an impermeable</p>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="section">
+        <h2 class="heading section__heading">Contact us<span class="heading__crown"></span></h2>
+        <div class="contact section__wrap">
+          <div class="contact__text">
+            <div class="contact__wrap">
+              <p class="contact__paragraph">Phone</p>
+              <p><a href="tel:+1 234 555-55-55" class="contact__link">+1 234 5555-55-55</a></p>
+            </div>
+            <div class="contact__wrap">
+              <p class="contact__paragraph">Email</p>
+              <p><a href="mailto:hello@miami.com" class="contact__link">hello@miami.com</a></p>
+            </div>
+            <div class="contact__wrap">
+              <p class="contact__paragraph">Address</p>
+              <p>400 first ave. n. suite 700 Minneapolis, MN 55401</p>
+            </div>
+          </div>
+          <form action="#" method="GET" class="form contact__form">
+            <label class="form__item">
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                maxlength="30"
+                required
+                class="input form__input">
+            </label>
+            <label class="form__item">
+              <input
+                type="tel"
+                pattern="^(1\s?)?(\(\d{3}\)|\d{3})[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$"
+                name="phone"
+                placeholder="Phone (in format: 123-456-7890)"
+                required
+                class="input form__input">
+            </label>
+            <label class="form__item">
+              <textarea
+                name="message"
+                placeholder="Message"
+                maxlength="300"
+                required
+                class="input input_textarea form__input"></textarea>
+            </label>
+            <button type="submit" class="btn form__btn">Write to us</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="logo footer__logo"></div>
+    </footer>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>
